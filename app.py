@@ -13,7 +13,6 @@ def load_model():
     with open('model/vectorizer.pkl', 'rb') as f:
         vectorizer = pickle.load(f)
     return model, vectorizer
- 
 try:
     model, vectorizer = load_model()
 except FileNotFoundError:
